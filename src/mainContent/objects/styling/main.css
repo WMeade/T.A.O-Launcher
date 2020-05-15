@@ -1,0 +1,174 @@
+.root{
+   -fx-background-color: #36393f;
+   -fx-border-color: black;
+   -fx-border-width: 0.1em;
+}
+#lsScrollPane{
+     -fx-background-color: transparent;
+     -fx-border-color:  #202225;
+}
+
+#lsScrollPane .viewport{
+     -fx-background-color:  #202225;
+}
+
+#lsScrollPane > .scroll-bar:vertical > .thumb {
+    -fx-background-color: #6abefb;
+}
+
+#lsScrollPane > .scroll-pane{
+     -fx-background-color: #36393f;
+}
+
+#lsScrollPane > .scroll-bar:vertical .track{
+     -fx-background-color: #36393f;
+     -fx-background-radius: 0em;
+}
+#lsScrollPane > .increment-button, .decrement-button{
+     -fx-background-color: #36393f;
+}
+
+
+#lsScrollPane > .scroll-bar:vertical{
+      -fx-background-color: #36393f;
+}
+
+
+#steamButtonls{
+     -fx-background-color: #484c52;
+     -fx-text-fill: #6abefb;
+     -fx-font-size: 2em;
+     -fx-font-family: Purista, bold;
+     -fx-border-color:#6abefb;
+}
+
+.context-menu {
+    -fx-background-color: #202225;
+    -fx-text-fill: #6abefb;
+    -fx-effect: null;
+}
+.menu-item .label{
+    -fx-text-fill: #6abefb;
+}
+.menu-item:focused .label{
+    -fx-text-fill: white;
+}
+
+#playButton{
+    -fx-background-color: #19a919;
+    -fx-text-fill: white;
+    -fx-font-family: Purista, bold;
+    -fx-font-size: 1.5em;
+}
+
+#titlebar{
+    -fx-border-width: 0.1em;
+    -fx-background-color: #202225;
+    -fx-border-color: black;
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: #6abefb;
+    -fx-font-size: 1em;
+}
+
+.separator *.line{
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-text-fill: #6abefb;
+    -fx-border-color: #6abefb;
+}
+
+#LauncherPane{
+   -fx-background-color: #191819;
+   -fx-border-color: black;
+   -fx-border-width: 0.1em;
+}
+
+#gameTitle{
+   -fx-background-color: #484c52;
+   -fx-text-fill: #6abefb;
+   -fx-font-size: 3em;
+   -fx-label-padding:20;
+   -fx-border-color: black;
+   -fx-border-width: 0.1em;
+
+}
+#gamePage{
+    -fx-background-color: #191819;
+    -fx-border-color: black;
+    -fx-border-width: 0.1em;
+}
+
+#exitbutton{
+    -fx-background-color: transparent;
+}
+#addlauncherbutton{
+     -fx-background-color: transparent;
+}
+
+#steamLauncherButton{
+    -fx-background-color: transparent;
+}
+#uplayLauncherButton{
+    -fx-background-color: transparent;
+}
+#dirchoosebut{
+     -fx-background-color: transparent;
+}
+
+#lineone{
+    -fx-text-fill: #6abefb;
+}
+#userLabel{
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: #6abefb;
+}
+#usernameentry{
+    -fx-background-color: #484c52;
+    -fx-border-color: #2b2b2b;
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: white;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+#forgotpass{
+    -fx-background-color: #36393f;
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: #6abefb;
+    -fx-font-size: 1em;
+}
+#forgotpass:hover{
+    -fx-text-fill: white;
+}
+#loginButton{
+    -fx-background-color: #6abefb;
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: black;
+    -fx-border-radius: 11 11 11 11;
+    -fx-background-radius: 12 12 12 12;
+    -fx-text-alignment: left;
+}
+#rememberme{
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: #6abefb;
+
+}
+#rememberme .box{
+    -fx-border-color: #2b2b2b;
+    -fx-font-family: Purista, bold;
+    -fx-background-color: #484c52;
+    -fx-text-fill: #6abefb;
+}
+
+#rememberme:selected .box{
+    -fx-border-color: #2b2b2b;
+    -fx-text-fill: black;
+    -fx-background-color: #6abefb;
+}
+#genericerrorone{
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: #FF1212;
+}
+#genericerrortwo{
+    -fx-font-family: Purista, bold;
+    -fx-text-fill: #00FF00;
+}
