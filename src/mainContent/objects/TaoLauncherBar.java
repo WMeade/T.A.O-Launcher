@@ -10,6 +10,10 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 public class TaoLauncherBar {
     private double xOffset = 0;
     private double yOffset = 0;
@@ -36,13 +40,25 @@ public class TaoLauncherBar {
         this.exitButton.setLayoutY(-2);
         this.exitButton.setLayoutX(this.affectedPane.getWidth() - 30);
         this.affectedPane.getChildren().add(this.exitButton);
-        this.exitButton.setGraphic(new ImageView(new Image(this.getClass().getResourceAsStream("images/exitLogo.png"))));
+        String dir = new File("").getAbsolutePath();
+        dir += "\\images\\exitLogo.png";
+        try{
+            this.exitButton.setGraphic(new ImageView(new Image(new FileInputStream(dir))));
+        }catch (IOException IoExcept){
+            IoExcept.printStackTrace();
+        }
         this.exitButton.setId("exitbutton");
-
         this.minimizeButton.setLayoutY(-2);
         this.minimizeButton.setLayoutX(this.affectedPane.getWidth() - 60);
         this.affectedPane.getChildren().add(this.minimizeButton);
-        this.minimizeButton.setGraphic(new ImageView(new Image(this.getClass().getResourceAsStream("images/minimize.png"))));
+        String dirTwo = new File("").getAbsolutePath();
+        dirTwo += "\\images\\minimize.png";
+        try{
+            this.exitButton.setGraphic(new ImageView(new Image(new FileInputStream(dir))));
+            this.minimizeButton.setGraphic(new ImageView(new Image(new FileInputStream(dirTwo))));
+        }catch (IOException IoExcept){
+            IoExcept.printStackTrace();
+        }
         this.minimizeButton.setId("exitbutton");
 
         this.exitButton.setOnAction(new EventHandler<ActionEvent>() {

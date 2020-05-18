@@ -5,6 +5,7 @@ public class GameObject {
     String executablePath;
     String belongsTo;
     Boolean isFavourite;
+    Boolean onToolbar;
 
     public GameObject(){
 
@@ -15,10 +16,19 @@ public class GameObject {
         this.executablePath = executablePath;
         this.isFavourite = isFavourite;
         this.belongsTo = belongsTo;
+        this.onToolbar = false;
     }
 
     public String getName() {
         return name;
+    }
+
+    public Boolean getOnToolbar() {
+        return onToolbar;
+    }
+
+    public void setOnToolbar(Boolean onToolbar) {
+        this.onToolbar = onToolbar;
     }
 
     public void setName(String name) {
